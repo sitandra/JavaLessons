@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Examples {
+public class Examples01 {
 
     /**
      * Написать программу, которая запросит пользователя ввести <Имя> в консоли,

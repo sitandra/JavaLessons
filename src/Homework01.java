@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Homework {
+public class Homework01 {
     /**
      * Вычислить n-ое треугольного число(сумма чисел от 1 до n)
      */
