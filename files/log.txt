@@ -1,52 +1,52 @@
-янв. 28, 2023 5:44:46 PM Homework02 task1
+янв. 28, 2023 11:57:01 PM Homework02 task1
 INFO: Выполняется задание #1
-янв. 28, 2023 5:44:46 PM Homework02 compileDescription
+янв. 28, 2023 11:57:01 PM Homework02 compileDescription
 INFO: Обрабатывается студент Иванов
-янв. 28, 2023 5:44:46 PM Homework02 compileDescription
+янв. 28, 2023 11:57:01 PM Homework02 compileDescription
 INFO: Обрабатывается студент Петрова
-янв. 28, 2023 5:44:46 PM Homework02 compileDescription
+янв. 28, 2023 11:57:01 PM Homework02 compileDescription
 INFO: Обрабатывается студент Краснов
-янв. 28, 2023 5:44:46 PM Homework02 task2
+янв. 28, 2023 11:57:01 PM Homework02 task2
 INFO: Выполняется задание #2
-янв. 28, 2023 5:44:46 PM Homework02 task3
+янв. 28, 2023 11:57:01 PM Homework02 task3
 INFO: Выполняется задание #3
-янв. 28, 2023 5:44:46 PM Homework02 task1
+янв. 28, 2023 11:57:01 PM Homework02 task1
 INFO: Выполняется задание #1
-янв. 28, 2023 5:44:46 PM Homework02 compileDescription
+янв. 28, 2023 11:57:01 PM Homework02 compileDescription
 INFO: Обрабатывается студент Иванов
-янв. 28, 2023 5:44:46 PM Homework02 compileDescription
+янв. 28, 2023 11:57:01 PM Homework02 compileDescription
 INFO: Обрабатывается студент Петрова
-янв. 28, 2023 5:44:46 PM Homework02 compileDescription
+янв. 28, 2023 11:57:01 PM Homework02 compileDescription
 INFO: Обрабатывается студент Тестова
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 0 и 1 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 1 и 2 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 4 и 5 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 5 и 6 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 8 и 9 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 1 и 2 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 3 и 4 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 5 и 6 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 0 и 1 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 3 и 4 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 5 и 6 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 0 и 1 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 3 и 4 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 5 и 6 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 3 и 4 элементы
-янв. 28, 2023 5:44:46 PM Homework02 task4
+янв. 28, 2023 11:57:01 PM Homework02 task4
 INFO: Меняем 3 и 4 элементы
