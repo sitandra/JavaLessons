@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Examples04 {
-    public static void examples04(String[] args) {
+    public static void main(String[] args) {
         ex4();
     }
 
