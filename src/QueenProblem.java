@@ -1,16 +1,38 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class QueenProblem {
 
-    private int[][] board;
-    private int size;
-    private int[] idx;
+    private final int[][] board;
+    private final int size;
+    private final int[] idx;
+
+    private final List<int[][]> solutions;
+    private int solutionsCounts;
 
     public QueenProblem(int size) {
         this.size = size;
         this.board = new int[size][size];
+        this.idx = new int[size];
+        this.solutions = new ArrayList<>();
+    }
+
+    public QueenProblem toDo() {
+        solutionsCounts = 0;
+        InitIndexSet();
+        while (NextIndexSet()) { // будет size! перестановок
+            SetBoard(); // формируем массив по новой перестановке индексов
+            if (CheckBoard()) {
+                solutionsCounts++;
+                int[][] solution = Arrays.stream(board).map(int[]::clone).toArray(int[][]::new);
+                solutions.add(solution);
+            }
+        }
+        return this;
     }
 
     private void InitIndexSet() {
-        idx = new int[size];
         for (int i = 0; i < size; i++)
             idx[i] = i;
     }
@@ -18,33 +40,16 @@ public class QueenProblem {
     /**
      * Вернет n-ое решение
      * @param n решение по порядку
-     * @return
+     * @return Решение
      * @throws Exception Если решений нет
      */
     public int[][] Solution(int n) throws Exception {
-        int count = 0;
-        InitIndexSet();
-        while (NextIndexSet()) { // будет size! перестановок
-            SetBoard(); // формируем массив по новой перестановке индексов
-            if (CheckBoard()) {
-                count++;
-                if (count == n) return board;
-            }
-        }
-        throw new Exception("Задача не решена");
+        return solutions.get(n-1);
+        //throw new Exception("Задача не решена");
     }
 
     public int SolutionsCount() {
-        int count = 0;
-        InitIndexSet();
-        while (NextIndexSet()) { // будет size! перестановок
-            SetBoard(); // формируем массив по новой перестановке индексов
-            if (CheckBoard()) {
-                count++;
-                // System.out.println(count);
-            }
-        }
-        return count;
+        return solutionsCounts;
     }
 
     /**
@@ -62,7 +67,7 @@ public class QueenProblem {
      * Создает уникальную перестановку последовательных чисел
      */
     private boolean NextIndexSet() {
-        int n = idx.length;
+        int n = size;
         int j = n - 2;
         while (j != -1 && idx[j] >= idx[j + 1]) j--;
         if (j == -1)
@@ -88,41 +93,37 @@ public class QueenProblem {
     private boolean CheckBoard() {
         int n = size - 1;
         for (int i = 0; i < n; i++) {
-            if (!CheckDiagonal1(i, 0)) return false;
+            if (Diagonal1IsBroken(i, 0)) return false;
         }
         for (int j = 1; j < n; j++) {
-            if (!CheckDiagonal1(0, j)) return false;
+            if (Diagonal1IsBroken(0, j)) return false;
         }
         for (int i = 1; i <= n; i++) {
-            if (!CheckDiagonal2(i, 0)) return false;
+            if (Diagonal2IsBroken(i, 0)) return false;
         }
         for (int j = 1; j < n; j++) {
-            if (!CheckDiagonal2(7, j)) return false;
+            if (Diagonal2IsBroken(7, j)) return false;
         }
         return true;
     }
 
-    private boolean CheckDiagonal1(int i, int j) {
-        int max = board.length;
+    private boolean Diagonal1IsBroken(int i, int j) {
         int sum = 0;
-        while (i < max && j < max) {
+        while (i < size && j < size) {
             sum += board[i][j];
             i++;
             j++;
         }
-        if (sum > 1) return false;
-        return true;
+        return sum > 1;
     }
 
-    private boolean CheckDiagonal2(int i, int j) {
-        int max = board.length;
+    private boolean Diagonal2IsBroken(int i, int j) {
         int sum = 0;
-        while (i >= 0 && j < max) {
+        while (i >= 0 && j < size) {
             sum += board[i][j];
             i--;
             j++;
         }
-        if (sum > 1) return false;
-        return true;
+        return sum > 1;
     }
 }
