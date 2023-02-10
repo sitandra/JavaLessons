@@ -6,6 +6,7 @@ public class Main {
         // new Homework02();
         // new Homework03();
         // new Homework04();
-        new Homework05();
+        // new Homework05();
+        new Homework06();
     }
 }
