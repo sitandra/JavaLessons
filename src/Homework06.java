@@ -22,7 +22,7 @@ public class Homework06 {
         Set<Laptop> filteredLaptops = Laptop.filter(laptops, filter);
         System.out.println("Количество совпадений: " + filteredLaptops.size() + "\n");
         for (Laptop laptop : filteredLaptops) {
-            System.out.println(laptop.draw());
+            System.out.println(laptop);
         }
 
     }

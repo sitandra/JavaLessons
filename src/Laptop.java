@@ -28,7 +28,7 @@ public class Laptop {
         return this;
     }
 
-    public String draw() {
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(creator).append(' ').append(model).append(' ').append(RAMSize).append("Mb ").append(hardDriveSize)
                 .append("Gb ").append(OS);
